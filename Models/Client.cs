@@ -21,7 +21,7 @@ namespace RazorPagesZenSpaCh7.Models
 
         public string Address { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
-        [RegularExpression("^[a-zA-Z]*$", ErrorMessage = "Only alphabetic letters are allowed.")]
+        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Only alphabetic letters are allowed.")]
         public string State { get; set; } = string.Empty;
         [Display(Name = "Zipcode")]
         [Column("Zipcode")]
